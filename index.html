@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101b35">
+<title>לומדים היסטוריה | הכנה למבחן</title>
+<style>
+:root{--bg:#0b1224;--panel:#121f3b;--panel2:#192a4b;--line:#2b4066;--gold:#f2c66d;--gold2:#ffe3a0;--text:#f4f6fb;--muted:#aab7d0;--blue:#79b8ff;--green:#54d6a0;--red:#ff777f;--shadow:0 18px 45px #0005}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 15% 0%,#20365d 0,transparent 36%),radial-gradient(ellipse at 90% 20%,#2a234b 0,transparent 30%),var(--bg);color:var(--text);font-family:Arial,"Segoe UI",sans-serif;line-height:1.65;min-height:100vh}
+button,input{font:inherit}button{cursor:pointer}.app{max-width:1180px;margin:auto;padding:20px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:10px 2px 22px}.brand{display:flex;align-items:center;gap:12px}.brand-mark{width:48px;height:48px;border-radius:16px;background:linear-gradient(145deg,#f6d88d,#b98232);display:grid;place-items:center;color:#18213a;font-size:25px;box-shadow:0 8px 24px #d4a34a33}.brand h1{font-size:19px;margin:0}.brand small{display:block;color:var(--muted);font-size:12px}.top-actions{display:flex;gap:8px;flex-wrap:wrap}.mini-btn{border:1px solid var(--line);background:#142342;color:var(--text);border-radius:12px;padding:8px 12px}
+.hero{position:relative;overflow:hidden;border:1px solid #40577d;border-radius:28px;padding:36px;background:linear-gradient(115deg,#1b3155ed,#17213ded 62%,#342b4bed);box-shadow:var(--shadow);margin-bottom:22px}.hero:after{content:"";position:absolute;width:280px;height:280px;border:1px solid #f2c66d30;border-radius:50%;left:-70px;top:-120px;box-shadow:0 0 0 28px #f2c66d09,0 0 0 58px #f2c66d08}.eyebrow{color:var(--gold);font-weight:bold;letter-spacing:1px;font-size:12px}.hero h2{font-size:clamp(29px,5vw,48px);line-height:1.2;margin:8px 0 12px;max-width:720px}.hero p{color:#c5d0e4;max-width:700px;margin:0 0 22px}.hero-meta{display:flex;gap:10px;flex-wrap:wrap}.pill{border:1px solid #ffffff25;background:#ffffff0c;border-radius:999px;padding:6px 12px;color:#e2e9f5;font-size:13px}
+.nav-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:20px 0 28px}.nav-card{border:1px solid var(--line);border-radius:20px;padding:20px;text-align:right;background:linear-gradient(145deg,#172746,#111d36);color:var(--text);min-height:150px;transition:.2s;box-shadow:0 8px 22px #0002}.nav-card:hover{transform:translateY(-4px);border-color:#d9b96f;box-shadow:0 14px 30px #0004}.nav-card .ico{font-size:27px;margin-bottom:10px}.nav-card strong{display:block;font-size:18px}.nav-card span{color:var(--muted);font-size:13px}.section{display:none;animation:fade .25s ease}.section.active{display:block}@keyframes fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:12px 0 18px}.section-head h2{margin:0;font-size:27px}.section-head p{margin:4px 0 0;color:var(--muted)}.back{border:1px solid var(--line);background:#142342;color:var(--text);border-radius:12px;padding:9px 14px}
+.card{background:linear-gradient(145deg,#172746,#111d36);border:1px solid var(--line);border-radius:19px;padding:20px;box-shadow:0 8px 25px #0002}.card h3{margin:0 0 9px;color:var(--gold2);font-size:19px}.card p{color:#d1daea;margin:7px 0}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.topic-label{display:inline-block;color:var(--gold);font-size:12px;font-weight:bold;margin-bottom:7px}.summary-block{margin-bottom:15px}.summary-block h3{border-bottom:1px solid var(--line);padding-bottom:9px}.summary-block h4{color:#dbe7fa;margin:16px 0 4px}.summary-block ul,.summary-block ol{padding-right:22px;color:#d1daea}.summary-block li{margin:6px 0}.summary-block strong{color:#fff}.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;margin:14px 0}.compare{width:100%;border-collapse:collapse;min-width:570px;background:#101c34}.compare th{background:#263b60;color:var(--gold2);text-align:right;padding:12px}.compare td{padding:12px;border-top:1px solid var(--line);vertical-align:top;color:#d8e1ef}.compare tr:nth-child(even) td{background:#ffffff05}.terms-tools{display:flex;gap:10px;margin-bottom:15px;flex-wrap:wrap}.search{flex:1;min-width:190px;border:1px solid var(--line);background:#101c34;color:white;border-radius:12px;padding:12px}.term-card{cursor:pointer;min-height:140px;position:relative}.term-card .definition{display:none;color:#d5dfef}.term-card.open .definition{display:block}.term-card .tap{font-size:12px;color:var(--blue);margin-top:10px}.term-card.open .tap{display:none}
+.quiz-layout{display:grid;grid-template-columns:260px 1fr;gap:16px}.quiz-list{display:grid;gap:10px;align-content:start}.quiz-choice{background:#142342;border:1px solid var(--line);color:white;border-radius:14px;padding:14px;text-align:right}.quiz-choice.active,.quiz-choice:hover{border-color:var(--gold);background:#263957}.quiz-box{min-height:390px}.quiz-top{display:flex;justify-content:space-between;color:var(--muted);font-size:13px;gap:10px}.progress{height:8px;background:#091329;border-radius:10px;overflow:hidden;margin:12px 0 22px}.progress>span{display:block;height:100%;background:linear-gradient(90deg,#d6a64c,#ffe2a0);width:0;transition:.3s}.question{font-size:22px;line-height:1.5;margin:12px 0 20px}.answers{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.answer{border:1px solid #3a5076;background:#1a2d4e;color:#f3f6fc;border-radius:14px;padding:14px;text-align:right;min-height:58px;transition:.15s}.answer:hover:not(:disabled){border-color:var(--gold);background:#263c61}.answer:disabled{cursor:default;opacity:1}.answer.correct{border-color:var(--green);background:#164635}.answer.wrong{border-color:var(--red);background:#512b3a}.feedback{display:none;border-radius:14px;padding:15px;margin-top:17px}.feedback.show{display:block}.feedback.good{background:#123d32;border:1px solid #318b6b}.feedback.bad{background:#492632;border:1px solid #a74e5b}.feedback strong{font-size:18px}.feedback p{margin:7px 0 0;color:#e4ebf5}.quiz-actions{display:flex;justify-content:space-between;gap:10px;margin-top:18px}.primary{background:linear-gradient(135deg,#f4d58b,#d6a34d);color:#18213a;border:0;border-radius:13px;padding:11px 20px;font-weight:bold}.primary:disabled{opacity:.45;cursor:not-allowed}.secondary{border:1px solid var(--line);background:#172746;color:white;border-radius:13px;padding:11px 17px}.result{text-align:center;padding:30px 10px}.score{font-size:56px;font-weight:bold;color:var(--gold)}.result-stats{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:15px}.stat{background:#0d1930;border:1px solid var(--line);padding:10px 16px;border-radius:12px}.game-tabs{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:15px}.game-tabs button{border:1px solid var(--line);background:#142342;color:white;padding:10px 14px;border-radius:12px}.game-tabs button.active{border-color:var(--gold);color:var(--gold2)}.notice{color:var(--muted);font-size:13px}.footer{text-align:center;color:#8191ad;padding:30px 10px 10px;font-size:12px}
+@media(max-width:800px){.nav-grid{grid-template-columns:repeat(2,1fr)}.quiz-layout{grid-template-columns:1fr}.quiz-list{grid-template-columns:repeat(3,1fr)}.quiz-choice{text-align:center;padding:10px 6px;font-size:13px}.cards{grid-template-columns:1fr}}
+@media(max-width:520px){.app{padding:12px}.hero{padding:25px 20px;border-radius:22px}.hero h2{font-size:31px}.nav-card{padding:15px;min-height:135px}.nav-card strong{font-size:16px}.section-head h2{font-size:23px}.answers{grid-template-columns:1fr}.question{font-size:19px}.card{padding:16px}.quiz-list{grid-template-columns:1fr 1fr}.topbar{align-items:flex-start}.brand h1{font-size:16px}}
+
+.video-card{margin-top:16px}.video-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:12px}.video-heading h3{margin:2px 0 4px}.video-heading p{margin:0}.video-link{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;color:#17213a;background:linear-gradient(135deg,#f4d58b,#d6a34d);font-weight:bold;padding:10px 14px;border-radius:12px;white-space:nowrap}.video-frame{position:relative;width:100%;aspect-ratio:16/9;max-height:620px;background:#080e1b;border:1px solid var(--line);border-radius:15px;overflow:hidden}.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.quiz-choice.concept-quiz{border:2px solid var(--gold);background:linear-gradient(135deg,#3d3152,#273b61);box-shadow:0 8px 24px #d6a34d24;position:relative}.quiz-choice.concept-quiz:after{content:'חידון מיוחד';display:inline-block;color:#241b0c;background:var(--gold2);border-radius:999px;padding:2px 8px;margin-top:6px;font-size:11px;font-weight:bold}.quiz-choice.concept-quiz.active,.quiz-choice.concept-quiz:hover{background:linear-gradient(135deg,#584269,#304c75);border-color:#ffe3a0}.match-prompt{border:1px solid #425b82;background:linear-gradient(135deg,#233b61,#172746);border-radius:17px;padding:20px;text-align:center;margin:12px 0 16px}.match-prompt small{display:block;color:var(--muted);font-size:12px;margin-bottom:5px}.match-prompt strong{font-size:24px;color:var(--gold2)}.match-options{display:grid;grid-template-columns:1fr;gap:10px}.match-option{background:#172746;border:1px solid #3a5076;border-radius:14px;padding:15px;color:white;text-align:right;line-height:1.5;min-height:62px;transition:.15s}.match-option:hover:not(:disabled){border-color:var(--gold);background:#263c61}.match-option:disabled{opacity:1}.match-option.good{border-color:var(--green);background:#164635}.match-option.bad{border-color:var(--red);background:#512b3a}.match-progress{display:flex;justify-content:space-between;color:var(--muted);font-size:13px;gap:10px}.match-feedback{margin-top:13px;padding:13px;border-radius:13px;display:none}.match-feedback.show{display:block}.match-feedback.good{background:#123d32;border:1px solid #318b6b}.match-feedback.bad{background:#492632;border:1px solid #a74e5b}
+@media(max-width:600px){.video-heading{align-items:flex-start;flex-direction:column}.video-link{width:100%}.video-frame{aspect-ratio:4/3}.match-prompt{padding:16px}.match-prompt strong{font-size:21px}.match-option{font-size:15px;padding:14px}}
+
+</style>
+</head>
+<body>
+<div class="app">
+<header class="topbar">
+ <div class="brand"><div class="brand-mark">⌛</div><div><h1>לומדים היסטוריה</h1><small>מרכז הלמידה וההכנה למבחן</small></div></div>
+ <div class="top-actions"><button class="mini-btn" onclick="goHome()">⌂ מסך הבית</button></div>
+</header>
+<main>
+<section id="home" class="section active">
+ <div class="hero"><div class="eyebrow">מסע אל העולם המודרני</div><h2>מבינים את ההיסטוריה.<br><span style="color:var(--gold)">מגיעים מוכנים למבחן.</span></h2><p>מרכז למידה אינטראקטיבי בנושא הנאורות, הלאומיות המודרנית והסוציאליזם. למדו את החומר, שנו את דרך התרגול ובדקו את הידע שלכם.</p><div class="hero-meta"><span class="pill">3 נושאי לימוד</span><span class="pill">40 שאלות תרגול</span><span class="pill">25 מושגים חשובים</span><span class="pill">שמירת שיאים במכשיר</span></div></div>
+ <div class="nav-grid">
+  <button class="nav-card" onclick="showSection('summary')"><div class="ico">📚</div><strong>סיכום של החומר</strong><span>כל הנושאים, ההסברים וטבלאות ההשוואה</span></button>
+  <button class="nav-card" onclick="showSection('terms')"><div class="ico">🧠</div><strong>מושגים חשובים</strong><span>לומדים מושגים ובודקים את הזיכרון</span></button>
+  <button class="nav-card" onclick="showSection('quizzes')"><div class="ico">✍️</div><strong>חידונים</strong><span>ארבעה חידונים – כולל חידון מושגים</span></button>
+  <button class="nav-card" onclick="showSection('games')"><div class="ico">🎮</div><strong>משחקים</strong><span>משחק התאמת מושגים ומשחק נכון או לא נכון</span></button>
+ </div>
+ <div class="cards">
+  <div class="card"><span class="topic-label">איך כדאי ללמוד?</span><h3>① קודם מבינים</h3><p>קראו את הסיכום לפי הסדר, שימו לב להבדלים בין האידיאולוגיות ולדוגמאות המרכזיות.</p></div>
+  <div class="card"><span class="topic-label">אחר כך מתרגלים</span><h3>② בודקים את עצמכם</h3><p>עברו על המושגים, פתרו את החידונים ונסו את המשחקים כדי לחזק את הזיכרון.</p></div>
+ </div>
+
+ <div class="card video-card">
+  <div class="video-heading"><div><span class="topic-label">צפו ולמדו</span><h3>🎬 סרטון הסבר – העולם המודרני</h3><p>סרטון עזר לצפייה לצד הסיכום והתרגול.</p></div><a class="video-link" href="https://drive.google.com/file/d/1xQhqNejg3GYDxwmle5lwsKapbPwzfXQO/view?usp=sharing" target="_blank" rel="noopener">פתיחה ב־Google Drive ↗</a></div>
+  <div class="video-frame"><iframe src="https://drive.google.com/file/d/1xQhqNejg3GYDxwmle5lwsKapbPwzfXQO/preview" title="סרטון הסבר בהיסטוריה" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+  <p class="notice">אם הסרטון אינו מופעל, פתחו אותו ב־Google Drive וודאו שהוגדר שיתוף למי שיש קישור.</p>
+ </div>
+</section>
+
+<section id="summary" class="section">
+ <div class="section-head"><div><h2>📚 סיכום של החומר</h2><p>סיכום מאורגן לפי שלושת הנושאים למבחן</p></div></div>
+ <div id="summaryContent"></div>
+</section>
+
+<section id="terms" class="section">
+ <div class="section-head"><div><h2>🧠 מושגים חשובים</h2><p>לחצו על כרטיסייה כדי לחשוף את ההגדרה</p></div></div>
+ <div class="terms-tools"><input id="termSearch" class="search" placeholder="חיפוש מושג..." oninput="renderTerms()"><button class="secondary" onclick="toggleAllTerms()">חשיפת / הסתרת הגדרות</button></div>
+ <div id="termsGrid" class="cards"></div>
+</section>
+
+<section id="quizzes" class="section">
+ <div class="section-head"><div><h2>✍️ מרכז החידונים</h2><p>ארבעה חידונים: שלושה לפי נושאי הלימוד ואחד ייעודי למושגים</p></div></div>
+ <div class="quiz-layout"><div id="quizList" class="quiz-list"></div><div id="quizPanel" class="card quiz-box"><div class="result"><div class="score">30</div><h3>שאלות מחכות לכם</h3><p>בחרו אחד מארבעת החידונים כדי להתחיל בתרגול.</p></div></div></div>
+</section>
+
+<section id="games" class="section">
+ <div class="section-head"><div><h2>🎮 משחקים</h2><p>תרגול פעיל ומהנה של מושגי המבחן</p></div></div>
+ <div class="game-tabs"><button class="active" onclick="setGame('match',this)">התאמת מושג להגדרה</button><button onclick="setGame('truefalse',this)">נכון או לא נכון</button></div>
+ <div id="gamePanel" class="card"></div>
+</section>
+</main>
+<footer class="footer">לומדים היסטוריה · כלי עזר ללמידה ולחזרה למבחן</footer>
+</div>
+<script>
+const summaryHTML = `
+<div class="card summary-block">
+<span class="topic-label">נושא 1 · עידן הנאורות</span><h3>1. עידן הנאורות – התשתית הרעיונית והפילוסופית</h3>
+<p>עידן הנאורות, ששיאו במאה ה־18, היה תנועה פילוסופית ותרבותית שביקשה לבחון מחדש את מוסדות החברה, השלטון והדת באמצעות התבונה האנושית. הוגי הנאורות ראו בשכל כלי מרכזי להבנת המציאות ולפתרון בעיות האנושות.</p>
+<h4>הגדרת הנאורות וסיסמאות היסוד</h4><ul>
+<li><b>רנה דקארט (1637):</b> טבע את המשפט "אני חושב, משמע אני קיים" – התבונה והמחשבה של האדם הן נקודת מוצא לבחינת המציאות.</li>
+<li><b>עמנואל קאנט (1784):</b> הגדיר את הנאורות כ"יציאתו של האדם ממצב חוסר הבגרות שהביא על עצמו". חוסר בגרות הוא הימנעות משימוש עצמאי בשכל, ולא חוסר יכולת שכלית.</li>
+<li><b>מוטו הנאורות:</b> "העז לדעת!" (Sapere aude) – אזור אומץ והשתמש בתבונתך בעצמך.</li></ul>
+<h4>חמשת עקרונות היסוד</h4><ol>
+<li><b>האדם אחראי לגורלו:</b> יש לבחון מסורות וסמכויות באופן ביקורתי ולהשתמש בתבונה ובמצפון אישי.</li>
+<li><b>כבוד האדם וחירותו:</b> האדם עומד במרכז וראוי לכבוד ולחירות; אין להתייחס אליו רק כאמצעי להשגת מטרות של אחרים.</li>
+<li><b>שוויון וזכויות נשים:</b> בני האדם שווים בערכם. מרי וולסטונקרפט דרשה חינוך ושוויון זכויות לנשים וטענה שנשים מסוגלות להשתתף בתחומי החיים הציבוריים.</li>
+<li><b>זכויות טבעיות:</b> זכויות בסיסיות המוקנות לאדם מעצם לידתו – חיים, חירות וקניין.</li>
+<li><b>האמנה החברתית:</b> השלטון שואב את סמכותו מהסכמת האזרחים. האזרחים מקבלים הגנה ושירותים, והשלטון מחויב להם. הפרדת רשויות נועדה למנוע ריכוז כוח ועריצות.</li></ol>
+<h4>חמשת המאפיינים התרבותיים והמעשיים</h4><ul>
+<li><b>אינדיבידואליזם:</b> האדם נתפס כפרט עצמאי בעל זכויות.</li>
+<li><b>רציונליזם:</b> שימוש בתבונה ובהיגיון לבחינת המציאות.</li>
+<li><b>ספקנות וחילון:</b> בחינה ביקורתית של אמונות וסמכויות והפרדה בין דת לשלטון. <b>דאיזם</b> מדמה את האל לבורא שיצר את העולם וקבע את חוקי הטבע, בלי התערבות שוטפת.</li>
+<li><b>ידע זמין ויישומי:</b> האנציקלופדיה הצרפתית בהובלת דידרו וד'אלמבר וקבינטי הטבע סייעו להנגיש ידע לציבור.</li>
+<li><b>אמונה בקידמה:</b> אמונה שהאנושות יכולה להשתפר במדע, ברפואה, בחקלאות, בתעשייה וגם במישור המוסרי.</li></ul>
+<h4>העולם הישן מול עידן הנאורות</h4>
+<div class="table-wrap"><table class="compare"><thead><tr><th>ממד השוואה</th><th>העולם הישן</th><th>עידן הנאורות</th></tr></thead><tbody>
+<tr><td><b>מקור הסמכות והידע</b></td><td>מסורת, כתבי קודש, המלך והכנסייה.</td><td>תבונה, חקירה מדעית, מצפון אישי וספקנות.</td></tr>
+<tr><td><b>מבנה המדינה</b></td><td>מלוכה אבסולוטית וריכוז סמכויות.</td><td>אמנה חברתית, שלטון החוק והפרדת רשויות.</td></tr>
+<tr><td><b>מעמד האדם</b></td><td>חברה מעמדית ונוקשה; כפיפות למסגרות מסורתיות.</td><td>אינדיבידואליזם, שוויון וזכויות טבעיות.</td></tr>
+<tr><td><b>מטרת הקיום</b></td><td>קבלת הסדר המסורתי והדגשת העולם הבא.</td><td>אחריות האדם לגורלו וחתירה לשיפור החיים בעולם הזה.</td></tr>
+</tbody></table></div>
+</div>
+<div class="card summary-block">
+<span class="topic-label">נושא 2 · הלאומיות המודרנית</span><h3>2. הלאומיות המודרנית – גיבוש מדינת הלאום</h3>
+<p>הלאומיות המודרנית התפתחה במהלך המאה ה־19. היא נשענה בין היתר על רעיונות הנאורות, ובעיקר על ריבונות העם והזכות לחירות, והעבירה אותם מן הפרט אל הקבוצה הלאומית.</p>
+<h4>הגדרה ומטרת העל</h4><p><b>לאומיות מודרנית</b> היא אידיאולוגיה המדגישה את זכותה של קבוצה בעלת מאפיינים משותפים להגדיר את עצמה ולנהל את ענייניה. מטרת העל היא <b>ריבונות</b> – שלטון עצמי במדינה עצמאית.</p>
+<ol><li><b>הגדרת זהות קולקטיבית:</b> גיבוש המאפיינים המאחדים את האומה.</li><li><b>עיצוב אופי המדינה:</b> בניית מוסדות פוליטיים, תרבותיים ומשפטיים וסמלים.</li><li><b>השגת ריבונות:</b> שלטון עצמי בשטח מוגדר, ללא כפיפות לשלטון זר.</li></ol>
+<h4>טיפוח תודעה לאומית</h4><p>תודעה לאומית היא המודעות של האדם להשתייכותו לאומה. מטפחים אותה באמצעות דגל, סמל והמנון; ימי חג וזיכרון; זיכרון קולקטיבי ודמויות היסטוריות; פולקלור, מנהגים, סיפורי עם ושפה.</p>
+<h4>שני דגמי הלאומיות</h4>
+<div class="table-wrap"><table class="compare"><thead><tr><th>קריטריון</th><th>לאומיות אתנית־היסטורית</th><th>לאומיות ליברלית־אזרחית</th></tr></thead><tbody>
+<tr><td><b>בסיס הזהות</b></td><td>מוצא, עבר היסטורי, קרבת דם, שפה, דת, מנהגים ותרבות.</td><td>ערכים פוליטיים משותפים, אידיאולוגיה וחוקה.</td></tr>
+<tr><td><b>הצטרפות לאומה</b></td><td>מבוססת בעיקר על שיוך מולד.</td><td>מבוססת על בחירה, הסכמה ושותפות אזרחית.</td></tr>
+<tr><td><b>ערכי ליבה</b></td><td>שימור מורשת, היסטוריה, שפה ותרבות.</td><td>חירות, שוויון, דמוקרטיה ושלטון החוק.</td></tr>
+<tr><td><b>דוגמה מקובלת בחומר</b></td><td>גרמניה.</td><td>ארצות הברית.</td></tr>
+</tbody></table></div>
+<h4>מלאומיות ללאומנות – הסכנות</h4><p>לאומיות שואפת להגדרה עצמית תוך כיבוד זכויות. <b>לאומנות</b> היא הקצנה שבה הלאום מוצב מעל ערכים אחרים, גם במחיר פגיעה בחירות ובשוויון.</p><ul><li><b>כלפי פנים:</b> אפליה, יחס עוין ושלילת זכויות ממיעוטים אתניים, דתיים או תרבותיים.</li><li><b>כלפי חוץ:</b> תוקפנות מדינית או צבאית, גזענות ושלילת זכותן של אומות אחרות לריבונות.</li></ul>
+</div>
+<div class="card summary-block">
+<span class="topic-label">נושא 3 · האידיאולוגיה הסוציאליסטית</span><h3>3. הסוציאליזם – מענה למצוקת התיעוש</h3>
+<p>המהפכה התעשייתית החלה באנגליה בסוף המאה ה־18 והתפשטה לאירופה. המעבר מכלכלה חקלאית לכלכלה תעשייתית, המבוססת על מכונות ומפעלים, גרם לתיעוש ולעיור: רבים עברו מהכפרים לערים כדי לעבוד במפעלים.</p>
+<h4>הפילוג המעמדי</h4><ul><li><b>בורגנות:</b> בעלי ההון, המפעלים ואמצעי הייצור, שצברו עושר וכוח.</li><li><b>פרולטריון:</b> מעמד הפועלים השכירים, שסבל משכר נמוך, שעות עבודה ארוכות, תנאים קשים, צפיפות וזיהום, וכן מהעסקת נשים וילדים בתנאים פוגעניים.</li></ul>
+<h4>סוציאליזם מהפכני – מרקסיזם / קומוניזם</h4><p>קרל מרקס ופרידריך אנגלס טענו שההיסטוריה האנושית מאופיינת במאבק בין מעמד מדכא למעמד מדוכא. בחברה התעשייתית הבורגנות שולטת באמצעי הייצור והפרולטריון הוא המעמד המדוכא.</p><ol><li>מהפכה של הפרולטריון נגד הבורגנות.</li><li>תפיסת השלטון והעברת אמצעי הייצור לשליטת הפועלים.</li><li>יצירת חברה ללא מעמדות וחלוקת משאבים לפי העיקרון: "כל אדם יעבוד לפי יכולתו ויקבל לפי צרכיו".</li></ol><p><b>האינטרנציונל:</b> ארגון פועלים בינלאומי שהוקם ב־1864 כדי לאחד פועלים ממדינות שונות במאבק משותף.</p>
+<h4>סוציאליזם דמוקרטי – חוקתי</h4><p>זרם זה ביקש לקדם שינוי הדרגתי באמצעות דמוקרטיה, חקיקה ורפורמות, ולא באמצעות מהפכה אלימה. המדינה תגבה מיסים, ובכלל זה מיסים פרוגרסיביים, ותשתמש בהכנסות כדי לצמצם פערים ולסייע לחסרי ההון.</p><ul><li><b>איגודים מקצועיים:</b> התארגנויות עובדים למאבק על שכר, שעות עבודה ותשלום עבור שעות נוספות.</li><li><b>מפלגות סוציאליסטיות:</b> פעלו בפרלמנטים לקידום חקיקה חברתית.</li><li><b>הישגים סוציאליים:</b> ביטוח בריאות ותאונות עבודה, דמי אבטלה, פנסיה, הגבלת או איסור עבודת ילדים, פיקוח על מחירים ושירותים חיוניים ציבוריים.</li></ul>
+<h4>השוואה בין שני הזרמים</h4>
+<div class="table-wrap"><table class="compare"><thead><tr><th>מוקד</th><th>סוציאליזם מהפכני</th><th>סוציאליזם דמוקרטי</th></tr></thead><tbody>
+<tr><td><b>שיטת פעולה</b></td><td>מהפכה ותפיסת אמצעי הייצור.</td><td>חקיקה, רפורמות ופעילות דמוקרטית.</td></tr>
+<tr><td><b>יחס לסדר הקיים</b></td><td>שינוי מן היסוד וביטול הבעלות הפרטית על אמצעי הייצור.</td><td>שינוי הדרגתי תוך שימוש במוסדות המדינה.</td></tr>
+<tr><td><b>כלים מרכזיים</b></td><td>מאבק מעמדי והתארגנות בינלאומית.</td><td>מיסים, איגודים מקצועיים ומפלגות.</td></tr>
+</tbody></table></div>
+</div>
+<div class="card summary-block"><span class="topic-label">חיבור בין הנושאים</span><h3>4. מבט מסכם – שלושה תהליכים שעיצבו את העולם המודרני</h3><ul><li><b>הנאורות:</b> העמידה במרכז את התבונה, החירות, השוויון וזכויות האדם.</li><li><b>הלאומיות:</b> תרגמה רעיונות של חירות וריבונות לזכותן של אומות להגדרה עצמית ולהקמת מדינות.</li><li><b>הסוציאליזם:</b> התפתח כמענה למצוקות שיצרה התעשייה וביקש לקדם צדק חברתי וביטחון כלכלי.</li></ul><p>שלושת התהליכים יחד מסייעים להבין את התפתחות המדינה, החברה והכלכלה המודרניות.</p></div>
+<div class="notice">הערת לימוד: הסיכום אורגן מחדש מתוך החומר שסופק. ניסוחים גורפים או פרטים היסטוריים תלויי־הקשר נוסחו בזהירות, כדי להבחין בין עיקרי האידיאולוגיות לבין דוגמאות והמחשות.</div>
+`;
+
+const terms = [
+["סובייקט אנושי חושב","תפיסה פילוסופית המזוהה עם דקארט: האדם החושב משתמש בתבונתו כנקודת מוצא לבחינת המציאות ולשיפוט עצמאי."],
+["רציונליזם","השקפה שלפיה התבונה והשכל הם כלים מרכזיים להבנת המציאות ולהנחיית התנהגות האדם."],
+["דאיזם – אלוהים כבשען","תפיסה המדמה את הבורא למי שיצר את היקום וקבע בו חוקי טבע, אך אינו מתערב באופן שוטף בניהולו."],
+["זכויות טבעיות","זכויות יסוד המוקנות לאדם מעצם היותו אדם, ובהן הזכות לחיים, לחירות ולקניין."],
+["האמנה החברתית","רעיון של הסכם בין האזרחים לשלטון: האזרחים מקבלים על עצמם חובות, והשלטון מחויב להגן עליהם ולספק שירותים ומשפט."],
+["הפרדת רשויות","חלוקת סמכויות השלטון לרשות מחוקקת, מבצעת ושופטת, כדי למנוע ריכוז כוח ועריצות."],
+["אינדיבידואליזם","תפיסה המדגישה את האדם כפרט עצמאי בעל זכויות, ולא רק כחלק מקבוצה."],
+["שינוי פרדיגמה","מעבר יסודי ממערכת תפיסות וערכים אחת למערכת אחרת, למשל מהעולם הישן לתפיסת הנאורות."],
+["קבינטי טבע","אוספים ואולמות תצוגה של פריטי טבע ומדע שנועדו לחשוף ידע לציבור והיו חלק מהתפתחות תרבות המוזיאונים."],
+["ריבונות","זכותה ויכולתה של מדינה או אומה לנהל את ענייניה בעצמה, ללא כפיפות לשלטון חיצוני."],
+["תודעה לאומית","מודעותו והזדהותו של אדם עם השתייכותו לאומה מסוימת."],
+["זיכרון קולקטיבי","זיכרונות, אירועים ודמויות מן העבר המשותפים לקבוצה ומחזקים את תחושת השייכות שלה."],
+["לאומיות אתנית־היסטורית","דגם לאומיות המדגיש מוצא, היסטוריה, שפה, דת, מנהגים ותרבות משותפים; בחומר ניתנת גרמניה כדוגמה."],
+["לאומיות ליברלית־אזרחית","דגם לאומיות המבוסס על בחירה והסכמה סביב ערכים פוליטיים ואזרחיים משותפים; בחומר ניתנת ארצות הברית כדוגמה."],
+["לאומנות","הקצנה של הלאומיות שבה הלאום מוצב מעל ערכים אחרים, ועלולה להוביל לפגיעה במיעוטים ולתוקפנות כלפי חוץ."],
+["בורגנות","המעמד החברתי־כלכלי של בעלי ההון, המפעלים ואמצעי הייצור בחברה התעשייתית."],
+["פרולטריון","מעמד העובדים השכירים, ובייחוד עובדי התעשייה, התלויים במכירת כוח עבודתם לפרנסתם."],
+["תיעוש, מיכון ועיור","תיעוש – התרחבות הייצור התעשייתי; מיכון – שימוש במכונות; עיור – גידול הערים ומעבר אוכלוסייה אליהן."],
+["מלחמת מעמדות","לפי המרקסיזם, מאבק בין מעמדות בעלי אינטרסים מנוגדים, ובחברה התעשייתית בין הבורגנות לפרולטריון."],
+["אמצעי ייצור","המשאבים והכלים המשמשים לייצור סחורות, כגון מפעלים, מכונות והון."],
+["סוציאליזם מהפכני","זרם המבקש לשנות את הסדר החברתי מן היסוד באמצעות מהפכה של הפועלים והעברת אמצעי הייצור לשליטתם."],
+["סוציאליזם דמוקרטי","זרם המבקש לקדם צדק חברתי בהדרגה באמצעות חקיקה, רפורמות, איגודים מקצועיים ומדיניות ציבורית."],
+["האינטרנציונל","ארגון פועלים בינלאומי שנוסד ב־1864 ונועד לקדם שיתוף פעולה בין פועלים ממדינות שונות."],
+["חקיקה סוציאלית","חוקים שנועדו להגן על עובדים ולספק ביטחון חברתי, כגון ביטוח, פנסיה, דמי אבטלה והגנה על ילדים עובדים."],
+["הלאמה","העברת בעלות או שליטה על נכסים ושירותים מן המגזר הפרטי למדינה."]
+];
+
+const quizzes = [
+{title:"עידן הנאורות",short:"הנאורות",qs:[
+["כיצד הגדיר קאנט את הנאורות?","יציאה מחוסר בגרות עצמי","יציאה מחוסר בגרות שנכפה מבחוץ","שימוש בתבונה בהדרכת סמכות","הכרה בזכויות הטבעיות של האדם",0,"קאנט הגדיר את הנאורות כיציאתו של האדם ממצב חוסר הבגרות שהביא על עצמו. הכוונה היא לא לחוסר יכולת שכלית, אלא לחוסר אומץ להשתמש בשכל ללא הדרכת אחרים. מוטו הנאורות שלו הוא „העז לדעת!” (Sapere aude)."],
+["איזה משפט מזוהה עם רנה דקארט?","אני חושב, משמע אני קיים","העז לדעת ולהשתמש בשכלך","האדם הוא תכלית בפני עצמה","החירות נובעת מהאמנה החברתית",0,"דקארט פרסם ב־1637 את „אני חושב, משמע אני קיים” (Cogito ergo sum). המשפט מדגיש את המחשבה וההכרה של האדם כנקודת מוצא פילוסופית."],
+["באילו כלים נדרש האדם להשתמש לפי עקרון האחריות לגורלו?","תבונה ומצפון אישי","תבונה והסתמכות על מסורת","מצפון אישי וקבלת סמכות","חקירה מדעית ללא שיפוט אישי",0,"האדם נדרש לבחון מסורות וסמכויות באופן ביקורתי ולהשתמש בתבונה ובמצפון האישי, במקום לקבל כל מסורת כאמת שאסור לערער עליה."],
+["מה פירוש הרעיון שהאדם אינו אמצעי?","הוא ראוי לכבוד בזכות עצמו","הוא זכאי לחירות רק במסגרת הקהילה","יש לכבד אותו אך ניתן להשתמש בו למטרות המדינה","כבודו נובע בעיקר ממעמדו החברתי",0,"התפיסה ההומניסטית רואה באדם מטרה בפני עצמה ולא כלי לקידום מטרות של אדם אחר. מכאן נובעת הדרישה לכבוד האדם ולחירותו."],
+["מה דרשה מרי וולסטונקרפט?","חינוך ושוויון זכויות לנשים","חינוך שווה אך הפרדה מהחיים הציבוריים","הכרה ביכולתן של נשים בלי שוויון פוליטי","שיפור מעמד האישה בעיקר במסגרת המשפחה",0,"וולסטונקרפט טענה שנשים מסוגלות לחשוב ולפעול בתחומים ציבוריים אם יקבלו חינוך ראוי, ודרשה שוויון שכלי ופוליטי."],
+["אילו זכויות נחשבות לזכויות טבעיות בחומר?","חיים, חירות וקניין","חיים, שוויון וביטחון","חירות, השכלה והשתתפות פוליטית","קניין, עבודה ושוויון בפני החוק",0,"הזכויות הטבעיות המופיעות בחומר הן הזכות לחיים, הזכות לחירות – לרבות מחשבה, מצפון וביטוי – והזכות לקניין. הן נתפסות כזכויות בסיסיות של האדם."],
+["מהו עקרון האמנה החברתית?","הסכמה בין אזרחים לשלטון","התחייבות של האזרחים לציית לשלטון בתמורה לסדר","הסכם בין המלך למוסדות הדת","הסכמה שבה המדינה מעניקה זכויות רק למי שמשלם מסים",0,"האמנה החברתית מתארת הסכם רעיוני: האזרחים מקבלים על עצמם חובות, והשלטון מחויב להגן עליהם ולספק שירותים, ביטחון ומשפט. שלטון שמפר את חובותיו מאבד את הלגיטימיות שלו."],
+["מהן שלוש הרשויות?","מחוקקת, מבצעת ושופטת","מחוקקת, מבצעת ומנהלית","מחוקקת, שופטת וצבאית","מבצעת, שופטת ומקומית",0,"הפרדת הרשויות מחלקת את כוח השלטון לרשות מחוקקת (פרלמנט), מבצעת (ממשלה) ושופטת (בתי המשפט), כדי ליצור איזונים ולמנוע עריצות."],
+["מה מדגיש האינדיבידואליזם?","האדם כפרט עצמאי בעל זכויות","האדם כפרט עצמאי בתוך החברה","האדם כחלק מקהילה בעלת זכויות משותפות","הפרט כמי שזהותו נקבעת בעיקר על ידי משפחתו",0,"האינדיבידואליזם מדגיש את הפרט העצמאי ואת זכויותיו. זאת בניגוד לתפיסות המדגישות את השתייכותו לקהילה או למעמד כמרכיב המרכזי בזהותו."],
+["מהי האמונה בקידמה?","האנושות יכולה להשתפר ולהתקדם","שיפור מתמשך בעיקר בתחומי המדע והטכנולוגיה","שיפור חברתי ללא שינוי מדעי","התקדמות טכנולוגית לצד חזרה לערכים מסורתיים בלבד",0,"הנאורות ביטאה אמונה ביכולת האנושות להשתפר באמצעות ידע, מדע, רפואה, חקלאות ותעשייה, וגם להתקדם מבחינה מוסרית וחברתית."],
+]},
+{title:"הלאומיות המודרנית",short:"הלאומיות",qs:[
+["מהי מטרת העל של הלאומיות המודרנית?","השגת ריבונות לאומית","השגת עצמאות מדינית לקבוצה לאומית","חיזוק האוטונומיה התרבותית תחת שלטון זר","יצירת שיתוף פעולה בין כמה מדינות ללא ריבונות",0,"מטרת העל היא ריבונות – יכולתה של האומה לנהל את ענייניה בעצמה במסגרת מדינה עצמאית, ללא כפיפות לגורם חיצוני."],
+["מהי תודעה לאומית?","מודעות להשתייכות לאומה","הזדהות עם היסטוריה ותרבות משותפות","היכרות עם מוסדות המדינה והחוקים בלבד","תחושת שייכות לקהילה מקומית ולאומית גם יחד",0,"תודעה לאומית היא תחושת המודעות וההזדהות של אדם עם האומה שאליה הוא משתייך. סמלים, חגים, זיכרון משותף ופולקלור מחזקים אותה."],
+["איזה מרכיב מתאים ללאומיות אתנית־היסטורית?","מוצא והיסטוריה משותפים","שפה, דת ומנהגים שעברו מדור לדור","הסכמה על עקרונות חוקתיים משותפים","בחירה באזרחות על בסיס ערכים פוליטיים",0,"הדגם האתני־היסטורי נשען על מרכיבים כגון מוצא, קרבת דם, עבר היסטורי, שפה, דת, מנהגים ותרבות. בחומר גרמניה משמשת דוגמה קלאסית."],
+["על מה מבוססת לאומיות ליברלית־אזרחית?","בחירה וערכים אזרחיים משותפים","הסכמה על מוסדות, חוקים וערכים משותפים","זיכרון היסטורי ומוצא משותף","קשרי משפחה, שפה ודת משותפות",0,"הדגם הליברלי־אזרחי מאגד אנשים סביב הסכמה וערכים פוליטיים משותפים, כגון חירות, שוויון, דמוקרטיה ושותפות אזרחית. בחומר ארצות הברית היא הדוגמה."],
+["מה ההבדל המרכזי בהצטרפות לשני דגמי הלאומיות?","שיוך מולד לעומת בחירה והסכמה","מורשת משותפת לעומת הסכמה אזרחית","שפה משותפת לעומת דת משותפת","מגורים באותה טריטוריה לעומת קשרי מסחר",0,"במודל האתני־היסטורי ההשתייכות קשורה בעיקר למרכיבים מולדים. במודל הליברלי־אזרחי ההשתייכות מבוססת על בחירה, הסכמה ושותפות אזרחית."],
+["מתי לאומיות הופכת ללאומנות קיצונית?","כשהלאום מוצב מעל כל ערך אחר","כאשר האינטרס הלאומי גובר גם על זכויות הפרט","כאשר האומה מבקשת עצמאות מדינית","כאשר המדינה מטפחת סמלים וזיכרון משותף",0,"לאומנות קיצונית מתפתחת כאשר הלאום נתפס כערך עליון שמצדיק פגיעה בערכים דמוקרטיים כמו חירות ושוויון."],
+["מהי סכנה של לאומנות כלפי פנים?","אפליה נגד מיעוטים","העדפת קבוצת הרוב בחלוקת זכויות","חיזוק הזהות המשותפת בקרב אזרחים","עידוד השתתפות של מיעוטים בחיים הציבוריים",0,"בתוך המדינה, לאומנות עלולה להביא לאפליה שיטתית, יחס עוין ושלילת זכויות ממיעוטים אתניים, דתיים או תרבותיים."],
+["מהי סכנה של לאומנות כלפי חוץ?","תוקפנות ושלילת ריבונות של אחרים","ניסיון להרחיב השפעה על חשבון עמים אחרים","הדגשת המורשת הלאומית בתוך המדינה","תחרות כלכלית בין מדינות ללא שימוש בכוח",0,"בזירה הבינלאומית לאומנות עלולה להתבטא בתוקפנות צבאית ומדינית, בגזענות ובשלילת זכותן של אומות אחרות לעצמאות."],
+["מה מבדיל בין לאומיות ללאומנות?","כיבוד זכויות לעומת עליונות הלאום","הגדרה עצמית תוך כיבוד זכויות לעומת העדפת הלאום על פניהן","זהות המבוססת על תרבות לעומת זהות המבוססת על שפה","שאיפה למדינה עצמאית לעומת שאיפה לאוטונומיה תרבותית",0,"לאומיות שואפת להגדרה עצמית של האומה תוך כיבוד זכויות יסוד. לאומנות קיצונית מציבה את הלאום מעל זכויות וערכים אחרים."],
+["אילו מרכיבים מסייעים לטפח תודעה לאומית?","סמלים, חגים וזיכרון משותף","טקסים, סמלים וסיפורי עבר משותפים","חוקים, מוסדות כלכליים ומערכת מס","שירותים ציבוריים, תשתיות ומוסדות משפט",0,"דגל, סמל, המנון, ימי חג וזיכרון, דמויות היסטוריות ופולקלור יוצרים תחושת שייכות ומחזקים את התודעה הלאומית."],
+]},
+{title:"האידיאולוגיה הסוציאליסטית",short:"הסוציאליזם",qs:[
+["מה תרם לצמיחת הסוציאליזם?","המהפכה התעשייתית","תיעוש ועיור לצד תנאי עבודה קשים","התרחבות המסחר לצד עליית החקלאות","גידול במפעלים לצד שיפור מיידי בתנאי העובדים",0,"המהפכה התעשייתית, התיעוש, המיכון והעיור יצרו עושר תעשייתי לצד מצוקה קשה בקרב פועלים. המצוקה הזאת תרמה לצמיחת הסוציאליזם."],
+["מי הייתה הבורגנות?","בעלי ההון והמפעלים","בעלי ההון ואמצעי הייצור","מנהלי העבודה והפקידים במפעלים","פועלים מיומנים שקיבלו שכר גבוה",0,"הבורגנות הייתה המעמד שהחזיק בהון, במפעלים ובאמצעי הייצור וצבר כוח כלכלי וחברתי."],
+["מי היה הפרולטריון?","מעמד הפועלים השכירים","עובדים שכירים התלויים בשכרם","בעלי הון המשקיעים במפעלים","בעלי מלאכה עצמאיים המעסיקים עובדים",0,"הפרולטריון הוא מעמד העובדים השכירים, ובייחוד פועלי התעשייה. רבים מהם סבלו משכר נמוך ומתנאי עבודה קשים."],
+["מה טענו מרקס ואנגלס על ההיסטוריה?","היא מאופיינת במאבק מעמדי","היא מתאפיינת במאבק בין מעמדות בעלי אינטרסים מנוגדים","היא מתקדמת בעיקר באמצעות הסכמות בין מעמדות","היא נקבעת בעיקר לפי מאבק בין מדינות",0,"לפי מרקס ואנגלס, תולדות האנושות מאופיינות במאבק בין מעמדות מדכאים למדוכאים. בחברה התעשייתית מדובר בעיקר בבורגנות ובפרולטריון."],
+["מהו שלב מרכזי בתוכנית המהפכנית?","העברת אמצעי הייצור לשליטת הפועלים","העברת השליטה באמצעי הייצור מן הבורגנות לפועלים","הרחבת זכויות העובדים תוך השארת הבעלות בידי הבורגנות","הכנסת נציגי פועלים לפרלמנט ושינוי חוקים בהדרגה",0,"לפי התיאור בחומר, לאחר מהפכת הפועלים אמורים הפועלים לתפוס את השלטון ולהשתלט על אמצעי הייצור, כחלק מהדרך לחברה שוויונית וחסרת מעמדות."],
+["מה היה האינטרנציונל?","ארגון פועלים בינלאומי","מסגרת לשיתוף פעולה בין ארגוני פועלים ממדינות שונות","איגוד מפלגות סוציאליסטיות שפעל במדינה אחת","ארגון בינלאומי של בעלי מפעלים ועובדים",0,"האינטרנציונל הראשון נוסד ב־1864 ונועד לאחד פועלים ממדינות שונות ולקדם שיתוף פעולה במאבקם המשותף."],
+["כיצד פועל הסוציאליזם הדמוקרטי?","באמצעות חקיקה ורפורמות","באמצעות רפורמות חברתיות במסגרת הדמוקרטיה","באמצעות תפיסת השלטון על ידי מעמד הפועלים","באמצעות ביטול הדרגתי של מוסדות המדינה",0,"הסוציאליזם הדמוקרטי מבקש לקדם שינוי הדרגתי בתוך מסגרות דמוקרטיות, באמצעות חקיקה, רפורמות והתערבות המדינה."],
+["כיצד המדינה מסייעת לפי הגישה הדמוקרטית?","גובה מיסים ומממנת שירותים חברתיים","ממסה הכנסות ומממנת הגנות ושירותים חברתיים","מחלקת את אמצעי הייצור לכלל האזרחים","מפקחת על השכר אך נמנעת משירותי רווחה",0,"המדינה משתמשת בהכנסות ממסים כדי לממן שירותים ותמיכות, לצמצם מצוקה ולשפר את מצבם של חסרי ההון."],
+["מה תפקידם של איגודים מקצועיים?","לייצג עובדים ולשפר תנאים","לנהל משא ומתן על שכר ותנאי עבודה","לייצג בעלי מפעלים מול המדינה","לפעול בעיקר לקידום חקיקה לאומית ותרבותית",0,"איגודים מקצועיים הם התארגנויות עובדים הפועלות מול מעסיקים למען שכר הוגן, שעות עבודה מוגבלות, תשלום שעות נוספות ותנאים טובים יותר."],
+["מהו ההבדל המרכזי בין שני הזרמים הסוציאליסטיים?","מהפכה לעומת שינוי חוקתי הדרגתי","מהפכה ושינוי יסודי לעומת רפורמות הדרגתיות","ביטול כל מיסוי לעומת העלאת מיסוי","ניהול מפעלים בידי המדינה לעומת הפרטה מלאה",0,"הזרם המהפכני מבקש לשנות את הסדר מן היסוד באמצעות מהפכה והעברת אמצעי הייצור לשליטת הפועלים. הזרם הדמוקרטי פועל באמצעות חקיקה, רפורמות ומוסדות המדינה."],
+]}
+,{title:"חידון מושגים",short:"מושגים",featured:true,qs:[["מהי המשמעות של רציונליזם?","העדפת התבונה להבנת המציאות","העדפת המסורת על פני השכל","חלוקת כוח בין רשויות","הדגשת הזהות הלאומית",0,"רציונליזם הוא השקפה המדגישה את התבונה והשכל ככלים מרכזיים להבנת המציאות ולהנחיית התנהגות האדם."],["מה מתאר המושג דאיזם?","אל שברא וקבע חוקי טבע","אל שמתערב בכל אירוע יומיומי","אמונה שהטבע נוצר במקרה","הפרדה בין שלוש רשויות",0,"הדאיזם מדמה את האל ל„בשען”: הוא ברא את היקום וקבע בו חוקי טבע, אך אינו מתערב באופן שוטף בניהולו."],["מהן זכויות טבעיות?","זכויות השייכות לאדם מלידה","זכויות שמעניק רק השליט","זכויות הנובעות ממעמד חברתי","זכויות שניתנות רק לאזרחים ותיקים",0,"זכויות טבעיות הן זכויות יסוד המוקנות לאדם מעצם היותו אדם, ובהן חיים, חירות וקניין."],["מהי הפרדת רשויות?","חלוקת סמכויות לשלוש רשויות","חלוקת המדינה למחוזות","הפרדה בין דתות שונות","חלוקת החברה למעמדות",0,"הפרדת רשויות מחלקת את סמכויות השלטון לרשות מחוקקת, מבצעת ושופטת כדי למנוע ריכוז כוח ועריצות."],["מהי ריבונות?","יכולת לנהל עניינים באופן עצמאי","שימור מנהגים של קבוצה","תחושת שייכות לאומה","חלוקת רכוש בין מעמדות",0,"ריבונות היא זכותה ויכולתה של אומה או מדינה לנהל את ענייניה בעצמה, ללא כפיפות לגורם חיצוני."],["מהו זיכרון קולקטיבי?","עבר משותף של קבוצה","זיכרון אישי של אירוע","חוקי המדינה הכתובים","רשימת סמלים לאומיים בלבד",0,"זיכרון קולקטיבי הוא מכלול אירועים, דמויות וזיכרונות המשותפים לבני האומה ומחזקים את תחושת השייכות."],["מה מאפיין לאומיות אתנית־היסטורית?","מוצא ותרבות משותפים","בחירה באזרחות ובחוקה","ערכים פוליטיים משותפים בלבד","השתייכות למעמד כלכלי",0,"לאומיות אתנית־היסטורית נשענת על מרכיבים כמו מוצא, עבר היסטורי, שפה, דת, מנהגים ותרבות."],["מהם אמצעי ייצור?","מפעלים, מכונות והון","שכר, שעות עבודה ופנסיה","דגל, המנון וסמל","מיסים, חוקים ובתי משפט",0,"אמצעי ייצור הם המשאבים והכלים המשמשים ליצירת סחורות ועושר, כגון מפעלים, מכונות והון."],["מהי מלחמת מעמדות לפי המרקסיזם?","מאבק בין מעמדות בעלי אינטרסים מנוגדים","תחרות בין מדינות על שטחים","מאבק בין רשויות השלטון","עימות בין קבוצות לאומיות שונות בלבד",0,"לפי המרקסיזם, ההיסטוריה מאופיינת במאבק בין מעמד מדכא למעמד מדוכא; בחברה התעשייתית אלה בעיקר הבורגנות והפרולטריון."],["מהי הלאמה?","העברת נכס או שירות לשליטת המדינה","העברת שירות ממשלתי לבעלות פרטית","העברת עובדים בין מפעלים","הרחבת סמכויות של איגוד מקצועי",0,"הלאמה היא העברת בעלות או שליטה על נכסים ושירותים מן המגזר הפרטי למדינה."]]}
+];
+
+let currentQuiz=-1, qIndex=0, correctCount=0, answered=false, currentQuestions=[];
+let activeGame='match', matchQuestions=[], matchIndex=0, matchScore=0, matchAnswered=false;
+let tfIndex=0, tfScore=0, tfRound=[], tfButtonOrder=[];
+let allOpen=false;
+const $=id=>document.getElementById(id);
+function shuffleArray(items){const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function showSection(id){document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));$(id).classList.add('active');window.scrollTo({top:0,behavior:'smooth'});if(id==='quizzes')renderQuizList();if(id==='games')renderGame();}
+function goHome(){showSection('home')}
+function renderSummary(){$('summaryContent').innerHTML=summaryHTML}
+function renderTerms(){let q=($('termSearch').value||'').trim().toLowerCase();$('termsGrid').innerHTML=terms.map((t,i)=>({t,i})).filter(x=>!q||x.t[0].toLowerCase().includes(q)||x.t[1].toLowerCase().includes(q)).map(x=>`<article class="card term-card ${allOpen?'open':''}" onclick="this.classList.toggle('open')"><span class="topic-label">מושג ${x.i+1}</span><h3>${x.t[0]}</h3><div class="definition">${x.t[1]}</div><div class="tap">לחצו לחשיפת ההגדרה ←</div></article>`).join('')||'<div class="card">לא נמצאו מושגים מתאימים.</div>'}
+function toggleAllTerms(){allOpen=!allOpen;document.querySelectorAll('.term-card').forEach(c=>c.classList.toggle('open',allOpen))}
+function renderQuizList(){$('quizList').innerHTML=quizzes.map((q,i)=>`<button class="quiz-choice ${currentQuiz===i?'active':''} ${q.featured?'concept-quiz':''}" onclick="startQuiz(${i})"><b>${q.featured?'✦ ':''}${i+1}. ${q.title}</b><br><small>${q.qs.length} שאלות · ${q.featured?'תרגול ייעודי לכל המושגים':'חידון נושא'}</small></button>`).join('')}
+function startQuiz(i){currentQuiz=i;qIndex=0;correctCount=0;answered=false;currentQuestions=shuffleArray(quizzes[i].qs).map(raw=>{const choices=shuffleArray([1,2,3,4].map(n=>({text:raw[n],correct:n-1===raw[5]})));return {q:[raw[0],...choices.map(c=>c.text),choices.findIndex(c=>c.correct),raw[6]]};});renderQuizList();renderQuestion();}
+function renderQuestion(){
+ const q=currentQuestions[qIndex].q;answered=false;
+ $('quizPanel').innerHTML=`<div class="quiz-top"><span>${quizzes[currentQuiz].title}</span><span>שאלה ${qIndex+1} מתוך ${currentQuestions.length}</span></div><div class="progress"><span style="width:${qIndex/currentQuestions.length*100}%"></span></div><div class="topic-label">בחרו את התשובה המתאימה ביותר</div><div class="question">${q[0]}</div><div class="answers">${[1,2,3,4].map((n)=>`<button class="answer" onclick="answerQuestion(${n-1})">${['א','ב','ג','ד'][n-1]}. ${q[n]}</button>`).join('')}</div><div id="feedback" class="feedback"></div><div class="quiz-actions"><button class="secondary" onclick="quitQuiz()">יציאה מהחידון</button><button id="nextBtn" class="primary" disabled onclick="nextQuestion()">${qIndex===currentQuestions.length-1?'לתוצאות':'לשאלה הבאה ←'}</button></div>`;
+}
+function answerQuestion(choice){if(answered)return;answered=true;const q=currentQuestions[qIndex].q;const buttons=[...$('quizPanel').querySelectorAll('.answer')];buttons.forEach((b,i)=>{b.disabled=true;if(i===q[5])b.classList.add('correct');if(i===choice&&choice!==q[5])b.classList.add('wrong')});const ok=choice===q[5];if(ok)correctCount++;const fb=$('feedback');fb.className='feedback show '+(ok?'good':'bad');fb.innerHTML=`<strong>${ok?'✓ תשובה נכונה!':'✕ תשובה לא נכונה'}</strong><p><b>התשובה הנכונה: ${q[q[5]+1]}</b></p><p>${q[6]}</p>`;$('nextBtn').disabled=false}
+function nextQuestion(){if(!answered)return;if(qIndex<currentQuestions.length-1){qIndex++;renderQuestion()}else showResult()}
+function showResult(){const total=currentQuestions.length,score=Math.round(correctCount/total*100);let msg=score===100?'מצוין! שליטה מלאה בחומר.':score>=80?'כל הכבוד! הבנה טובה מאוד.':score>=60?'עבודה טובה. כדאי לחזור על כמה נקודות.':'כדאי לעבור שוב על הסיכום ולנסות פעם נוספת.';let data=JSON.parse(localStorage.getItem('historyStudyScores')||'{}');const key=String(currentQuiz);data[key]=Math.max(data[key]||0,score);localStorage.setItem('historyStudyScores',JSON.stringify(data));$('quizPanel').innerHTML=`<div class="result"><div class="topic-label">סיום החידון · ${quizzes[currentQuiz].title}</div><div class="score">${score}</div><h3>כל הכבוד! סיימתם את החידון</h3><p>${msg}</p><div class="result-stats"><div class="stat">תשובות נכונות: <b>${correctCount}</b></div><div class="stat">תשובות שגויות: <b>${total-correctCount}</b></div><div class="stat">שיא אישי: <b>${data[key]}%</b></div></div><div class="quiz-actions" style="justify-content:center;flex-wrap:wrap"><button class="primary" onclick="startQuiz(${currentQuiz})">נסו שוב</button><button class="secondary" onclick="renderQuizList();$('quizPanel').innerHTML='<div class=&quot;result&quot;><h3>בחרו חידון נוסף</h3><p>אפשר להמשיך לנושא אחר.</p></div>'">בחירת חידון אחר</button></div></div>`}
+function quitQuiz(){currentQuiz=-1;renderQuizList();$('quizPanel').innerHTML='<div class="result"><h3>החידון הסתיים</h3><p>בחרו נושא כדי להתחיל מחדש.</p></div>'}
+function setGame(game,btn){activeGame=game;document.querySelectorAll('.game-tabs button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');if(game==='match')startMatch();if(game==='truefalse')startTrueFalse();renderGame()}
+function renderGame(){if(activeGame==='match')renderMatch();if(activeGame==='truefalse')renderTF()}
+function startMatch(){const chosen=shuffleArray(terms.map((t,i)=>i)).slice(0,8);matchQuestions=chosen.map(termIndex=>{const wrong=shuffleArray(terms.map((t,i)=>i).filter(i=>i!==termIndex)).slice(0,3);const options=shuffleArray([termIndex,...wrong]).map(index=>({index,text:terms[index][1]}));return {term:terms[termIndex][0],correct:options.findIndex(o=>o.index===termIndex),options,definition:terms[termIndex][1]};});matchIndex=0;matchScore=0;matchAnswered=false;}
+function renderMatch(){if(matchIndex>=matchQuestions.length){$('gamePanel').innerHTML=`<div class="result"><div class="score">${Math.round(matchScore/matchQuestions.length*100)}%</div><h3>סיימתם את משחק ההתאמה!</h3><p>${matchScore} התאמות נכונות מתוך ${matchQuestions.length}</p><button class="primary" onclick="startMatch();renderMatch()">סיבוב חדש</button></div>`;return;}const q=matchQuestions[matchIndex];matchAnswered=false;$('gamePanel').innerHTML=`<div class="match-progress"><span>התאמת מושג להגדרה</span><span>שאלה ${matchIndex+1} מתוך ${matchQuestions.length} · ניקוד ${matchScore}</span></div><div class="progress"><span style="width:${matchIndex/matchQuestions.length*100}%"></span></div><div class="match-prompt"><small>איזו הגדרה מתאימה למושג?</small><strong>${q.term}</strong></div><div class="match-options">${q.options.map((o,i)=>`<button class="match-option" onclick="answerMatch(${i})">${['א','ב','ג','ד'][i]}. ${o.text}</button>`).join('')}</div><div id="matchFeedback" class="match-feedback"></div><div class="quiz-actions"><button class="secondary" onclick="startMatch();renderMatch()">התחלה מחדש</button><button id="matchNext" class="primary" disabled onclick="nextMatch()">${matchIndex===matchQuestions.length-1?'לתוצאות':'הבא ←'}</button></div>`;}
+function answerMatch(choice){if(matchAnswered)return;matchAnswered=true;const q=matchQuestions[matchIndex],ok=choice===q.correct;if(ok)matchScore++;const buttons=[...$('gamePanel').querySelectorAll('.match-option')];buttons.forEach((b,i)=>{b.disabled=true;if(i===q.correct)b.classList.add('good');if(i===choice&&!ok)b.classList.add('bad')});const f=$('matchFeedback');f.className='match-feedback show '+(ok?'good':'bad');f.innerHTML=`<b>${ok?'✓ התאמה נכונה!':'✕ לא הפעם'}</b><div>${ok?'':'ההגדרה הנכונה: '+q.definition}</div>`;$('matchNext').disabled=false;}
+function nextMatch(){if(!matchAnswered)return;matchIndex++;renderMatch()}
+const tfItems=[
+["קאנט הגדיר את הנאורות כיציאה מחוסר בגרות שהאדם הביא על עצמו.",true,"ההגדרה מדגישה שימוש עצמאי בתבונה ללא הדרכה של אחר."],
+["הלאומיות האתנית־היסטורית מבוססת בעיקר על בחירה בחוקה משותפת.",false,"הדגם האתני־היסטורי מדגיש מוצא, עבר, שפה, דת ומנהגים; בחירה אזרחית מתאימה לדגם הליברלי־אזרחי."],
+["הפרדת הרשויות נועדה למנוע ריכוז כוח ועריצות.",true,"הכוח מתחלק בין רשות מחוקקת, מבצעת ושופטת."],
+["הפרולטריון הוא מעמד בעלי המפעלים וההון.",false,"בעלי ההון והמפעלים הם הבורגנות; הפרולטריון הוא מעמד הפועלים."],
+["האינטרנציונל נוסד בשנת 1864 ונועד לאחד פועלים ממדינות שונות.",true,"זהו ארגון פועלים בינלאומי שנועד לקדם מאבק ושיתוף פעולה משותפים."],
+["הסוציאליזם הדמוקרטי דוגל במהפכה אלימה כדרך היחידה לשינוי.",false,"הזרם הדמוקרטי מעדיף חקיקה, רפורמות ופעולה בתוך מסגרות דמוקרטיות."]
+];
+function startTrueFalse(){tfRound=shuffleArray(tfItems);tfIndex=0;tfScore=0;tfButtonOrder=shuffleArray([true,false]);}
+function renderTF(){if(tfIndex>=tfRound.length){$('gamePanel').innerHTML=`<div class="result"><div class="score">${Math.round(tfScore/tfRound.length*100)}%</div><h3>סיימתם את משחק נכון או לא נכון!</h3><p>${tfScore} תשובות נכונות מתוך ${tfRound.length}</p><button class="primary" onclick="startTrueFalse();renderTF()">שחקו שוב</button></div>`;return}const t=tfRound[tfIndex];tfButtonOrder=shuffleArray([true,false]);$('gamePanel').innerHTML=`<div class="topic-label">נכון או לא נכון · ${tfIndex+1} מתוך ${tfRound.length}</div><div class="progress"><span style="width:${tfIndex/tfRound.length*100}%"></span></div><div class="question">${t[0]}</div><div class="answers">${tfButtonOrder.map(v=>`<button class="answer" onclick="answerTF(${v})">${v?'נכון ✓':'לא נכון ✕'}</button>`).join('')}</div><div id="tfFeedback" class="feedback"></div><div class="quiz-actions"><span class="notice">ניקוד: ${tfScore}</span><button id="tfNext" class="primary" disabled onclick="tfIndex++;renderTF()">הבא ←</button></div>`}
+function answerTF(v){const t=tfRound[tfIndex];const ok=v===t[1];if(ok)tfScore++;$('gamePanel').querySelectorAll('.answer').forEach(b=>b.disabled=true);const f=$('tfFeedback');f.className='feedback show '+(ok?'good':'bad');f.innerHTML=`<strong>${ok?'תשובה נכונה!':'תשובה לא נכונה'}</strong><p>${t[2]}</p>`;$('tfNext').disabled=false;}
+
+renderSummary();renderTerms();renderQuizList();startMatch();renderGame();
+</script>
+</body>
+</html>
